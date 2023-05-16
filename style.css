@@ -121,12 +121,12 @@ main #topo .baixo::before{
 
 main #topo .baixo::before{
     transform: rotate(45deg);
-    right: 49.7vw;
+    right: 48vw;
 }
 
 main #topo .baixo::after{
     transform: rotate(-45deg);
-    right: 48.5vw;
+    right: 46.8vw;
 }
 
 @keyframes seta{
@@ -145,6 +145,7 @@ main #baixo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 2vw;
     gap: 5vh;
     top: 100vh;
     height: 100vh;

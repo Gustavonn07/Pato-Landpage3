@@ -19,5 +19,6 @@ function esquerda(){
 function imagem(){
     let imagem = document.getElementById('patao')
     let volta = 360
-    imagem.style.transform = `rotate(${volta}deg)`
+    imagem.style.transform = `rotate(${volta + anguloAtual}deg)`
+    anguloAtual += volta
 }
