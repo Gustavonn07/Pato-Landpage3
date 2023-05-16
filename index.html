@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="midias/favicon.png" type="image/x-icon">
     <title>Patavo</title>
 </head>
-<body>
+<body onload="nome()">
     <section id="banner">
         <header>
             <div class="container">
@@ -25,25 +25,27 @@
             <section id="topo">
                 <div class="esquerda">
                     <div class="texto">
-                        <h1>Olá <span id="nome"></span> como você está?</h1>
+                        <h1 id="nome-visitante"></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, minima placeat, fugiat animi saepe alias officia adipisci sint cum maiores dicta quis excepturi libero, consequuntur nisi laudantium aspernatur! Facilis minus consectetur illum laudantium similique quas quibusdam reprehenderit sapiente veniam atque fugit accusamus odit vel corrupti praesentium tempora voluptate, deserunt suscipit totam qui, in veritatis sint. Eveniet molestiae vel modi odit corrupti atque maxime, reprehenderit, nihil ratione ad quae?</p>
                     </div>
                 </div>
                 <div class="direita">
-                    <img src="midias/Pato.jpg" alt="Imagem de um pato lindo">
+                    <img src="midias/Pato.jpg" alt="Imagem de um pato lindo" id="patao" onclick="imagem()">
                 </div>
                 <div class="baixo"></div>
             </section>
             <section id="baixo">
                 <div class="cima">
-                    <img src="midias/favicon.png" alt="">
+                    <img src="midias/favicon.png" alt="Imagem do pato logo" id="patinho">
                 </div>
                 <div class="baixo">
-                    <input type="button" value="L">
-                    <input type="button" value="R">
+                    <input type="button" value="L" onclick="esquerda()">
+                    <input type="button" value="R" onclick="direita()">
                 </div>
             </section>
         </main>
     </section>
+    <script src="scripts/nome.js"></script>
+    <script src="scripts/animação-pagina.js"></script>
 </body>
 </html>

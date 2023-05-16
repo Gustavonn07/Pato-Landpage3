@@ -57,7 +57,7 @@ main #topo .esquerda{
 }
 
 main #topo .esquerda h1{
-    font-size: 7vh;
+    font-size: 6.5vh;
     text-align: center;
 }
 
@@ -88,6 +88,10 @@ main #topo .direita img{
     border-radius: 100%;
     box-shadow: 1px 1px 2px black;
 }
+
+#patao {
+    transition: transform 1s ease-in-out;
+  }
 
 main #topo .baixo{
     animation: seta 2s alternate ease-in-out infinite;
