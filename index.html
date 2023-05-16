@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="midias/favicon.png" type="image/x-icon">
     <title>Patavo</title>
@@ -13,9 +14,11 @@
     <section id="banner">
         <header>
             <div class="container">
-                <ul>
+                <ul data-aos="fade-down">
                     <li><a href="https://github.com/Gustavonn07" class="redess" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+
                     <li><a href="https://www.instagram.com/_gustavonep/" class="redess" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+
                     <li><a href="https://www.linkedin.com/in/gustavo-nepomuceno-657807272/" class="redess" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
@@ -23,29 +26,37 @@
         </header>
         <main>
             <section id="topo">
-                <div class="esquerda">
+                <div class="esquerda" data-aos="fade-right">
                     <div class="texto">
                         <h1 id="nome-visitante"></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, minima placeat, fugiat animi saepe alias officia adipisci sint cum maiores dicta quis excepturi libero, consequuntur nisi laudantium aspernatur! Facilis minus consectetur illum laudantium similique quas quibusdam reprehenderit sapiente veniam atque fugit accusamus odit vel corrupti praesentium tempora voluptate, deserunt suscipit totam qui, in veritatis sint. Eveniet molestiae vel modi odit corrupti atque maxime, reprehenderit, nihil ratione ad quae?</p>
                     </div>
                 </div>
-                <div class="direita">
+
+                <div class="direita" data-aos="fade-left">
                     <img src="midias/Pato.jpg" alt="Imagem de um pato lindo" id="patao" onclick="imagem()">
                 </div>
+
                 <div class="baixo"></div>
             </section>
+
             <section id="baixo">
-                <div class="cima">
+                <div class="cima" data-aos="fade-up">
                     <img src="midias/favicon.png" alt="Imagem do pato logo" id="patinho">
                 </div>
-                <div class="baixo">
+                <div class="baixo" data-aos="fade-up">
                     <input type="button" value="L" onclick="esquerda()">
                     <input type="button" value="R" onclick="direita()">
                 </div>
             </section>
         </main>
     </section>
+
     <script src="scripts/nome.js"></script>
     <script src="scripts/animação-pagina.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

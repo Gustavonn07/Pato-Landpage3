@@ -1,20 +1,19 @@
-let anguloAtualDir = 0;
-let anguloAtualEsq = 0;
+let anguloAtual = 0
 
 function direita() {
     let imagem = document.getElementById('patinho')
-    let incremento = 45;
+    let incremento = -45;
 
-    imagem.style.transform = `rotate(${anguloAtualDir + incremento}deg)`
-    anguloAtualDir += incremento
+    imagem.style.transform = `rotate(${anguloAtual + incremento}deg)`
+    anguloAtual += incremento
 }
 
 function esquerda(){
     let imagem = document.getElementById('patinho')
-    let incremento = -45;
+    let incremento = 45;
 
-    imagem.style.transform = `rotate(${anguloAtualEsq + incremento}deg)`
-    anguloAtualEsq += incremento
+    imagem.style.transform = `rotate(${anguloAtual + incremento}deg)`
+    anguloAtual += incremento
 }
 
 function imagem(){
