@@ -87,18 +87,21 @@ main #topo .direita{
     top: 3vh;
 }
 
-main #topo .direita img{
+main #topo .direita{
     position: absolute;
-    right: 4vw;
-    top: 22.5vh;
-    width: 30vw;
-    height: 60vh;
+    right: 6vw;
+    top: 25.5vh;
+    width: 27vw;
+    height: 54vh;
     border-radius: 100%;
     box-shadow: 1px 1px 2px black;
 }
 
 #patao {
     transition: transform 1s ease-in-out;
+    border-radius: 100%;
+    width: 27vw;
+    height: 54vh;
   }
 
 main #topo .baixo{
